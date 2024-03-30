@@ -1,7 +1,13 @@
-<style lang="scss">
-@use "~/assets/scss/main.scss";
-</style>
+<script setup lang="ts">
+
+const router = useRouter();
+const nav = [{ label: "index", to: "/" }];
+
+</script>
 
 <template>
-  <div class="text-3xl font-bold underline">helloWorld!</div>
+  <NuxtExample dir="pages" :nav="nav" current-route>
+    <NuxtLoadingIndicator />
+    <NuxtPage />
+  </NuxtExample>
 </template>

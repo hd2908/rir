@@ -9,7 +9,14 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'myungjo': ['NanumMyeongjoBold', 'ui-sans-serif', ' system-ui', ' sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
+    },
+    screens: {
+      'sm': '640px',
+      'md': '1024px',
+      'lg': '1280px',
+    },
   },
   plugins: [],
 }
